@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProductsApp.Models
+namespace PrefeituraApp.Models
 {
-    public class AdocaoCaoRequest
+    public class AdocaoRequest
     {
         public string Cpf { get; set; }
         public string Nome { get; set; }

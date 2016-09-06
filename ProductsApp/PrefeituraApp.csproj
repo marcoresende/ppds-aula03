@@ -80,11 +80,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\PrefeituraController.cs" />
+    <Compile Include="Controllers\v1\ConsultaController.cs" />
+    <Compile Include="Controllers\v1\PedidoController.cs" />
+    <Compile Include="Controllers\v1\SolicitacaoController.cs" />
+    <Compile Include="Error\FalhaException.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AdocaoCaoRequest.cs" />
+    <Compile Include="Models\AdocaoRequest.cs" />
     <Compile Include="Models\Imovel.cs" />
     <Compile Include="Models\Logradouro.cs" />
     <Compile Include="Models\PedidoAdocao.cs" />
