@@ -1,6 +1,6 @@
 #[**Voltar**](https://github.com/marcoresende/ppds-aula03/blob/master/README.md)
 
-## **API - Consulta V1**
+## **API - Consulta v1**
 
 	- Disponibiliza serviços para consulta de dados da Prefeitura.
 
@@ -17,10 +17,9 @@
 #### Consulta de IPTU
 
 	- Recebe o código cadastral do imóvel e devolve o imposto a ser pago.
-	- Tipo de dados de entrada: application/json
-	- Tipo de dados de retorno: application/json
 
 ##### URL: /api/v1/consulta/iptu/{id}
+##### Método: GET
 
 ##### Entrada:
 
@@ -40,14 +39,15 @@
  - Endereços de **N** até **Z**, os dias de coleta são: Segunda-feira, Quarta-feira, Sexta-feira.
 
 ##### URL: /api/v1/consulta/iptu/{logradouro}
+##### Método: GET
 
 ##### Entrada:
 
 	- logradouro : Alfanumérico.
 
-	**Exemplo**: Rua Santa Rita, Avenida Afonso Pena, etc.
+	Exemplo: Rua Santa Rita, Avenida Afonso Pena, etc.
 
 ##### Retorno:
 
 	- String com descrição dos dias.
-	**Exemplo**: "Dias de coleta: Segunda-feira, Quarta-feira, Sexta-feira"
+	Exemplo: "Dias de coleta: Segunda-feira, Quarta-feira, Sexta-feira"
