@@ -1,4 +1,4 @@
-#[**Início**]()
+#[**Voltar**](https://github.com/marcoresende/ppds-aula03/blob/master/README.md)
 
 ## **API - Consulta V1**
 
@@ -20,18 +20,34 @@
 	- Tipo de dados de entrada: application/json
 	- Tipo de dados de retorno: application/json
 
-	##### URL: /api/v1/consulta/iptu/{id}
+##### URL: /api/v1/consulta/iptu/{id}
 
-	##### Entrada
+##### Entrada:
 
 	 - id : Numérico.
 
-	##### Retorno
+##### Retorno:
 
 	 - Id : Numérico
      - Logradouro : Alfanumérico
      - Categoria : Alfanumérico
      - Iptu : Numérico
 
+#### Consulta de Coleta de Lixo
 
+ - Recebe o logradouro e retorna os dias da coleta de lixo. 
+ - Endereços de **A** até **M**, os dias de coleta são: Terça-feira, Quinta-feira, Sábado.
+ - Endereços de **N** até **Z**, os dias de coleta são: Segunda-feira, Quarta-feira, Sexta-feira.
 
+##### URL: /api/v1/consulta/iptu/{logradouro}
+
+##### Entrada:
+
+	- logradouro : Alfanumérico.
+
+	**Exemplo**: Rua Santa Rita, Avenida Afonso Pena, etc.
+
+##### Retorno:
+
+	- String com descrição dos dias.
+	**Exemplo**: "Dias de coleta: Segunda-feira, Quarta-feira, Sexta-feira"
