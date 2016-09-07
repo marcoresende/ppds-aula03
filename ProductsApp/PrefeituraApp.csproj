@@ -88,6 +88,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AdocaoRequest.cs" />
+    <Compile Include="Models\Aluno.cs" />
+    <Compile Include="Models\Disciplina.cs" />
     <Compile Include="Models\Imovel.cs" />
     <Compile Include="Models\Logradouro.cs" />
     <Compile Include="Models\PedidoAdocao.cs" />

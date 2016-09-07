@@ -84,7 +84,7 @@ namespace PrefeituraApp.Controllers.v1
                 solicitacao.Solicitao = ++ultimoId;
                 solicitacao.Logradouro = request.Logradouro;
                 solicitacao.Status = "Aguardando Atendimento";
-                solicitacao.Tipo = TipoSolicitacao.MeioFio;
+                solicitacao.Tipo = TipoSolicitacao.RecolhimentoCarro;
 
                 solicitacoes.Add(solicitacao);
 
