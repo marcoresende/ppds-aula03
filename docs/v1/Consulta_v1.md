@@ -70,8 +70,6 @@
 
 	- id : Numérico.
 
-	Exemplo: Rua Santa Rita, Avenida Afonso Pena, etc.
-
 ##### Retorno:
 
 	- Codigo : Numérico,
